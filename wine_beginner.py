@@ -15,21 +15,20 @@ nltk.download('wordnet')
 
 def wine_beginner_recommendation_streamlit():
     # 와린이 추천 페이지
-    if st.session_state.page == 'wine_beginner':
-        st.title('🤔와린이 추천🤔')
-        st.write("당신은 와린이 시군요!! 당신에게 알맞은 와인을 추천해 드리겠습니다.")
-        col1, col2 = st.columns(2)
-        with col1:
-            # '홈으로 돌아가기' 버튼
-            if st.button('홈으로 돌아가기', icon='🏠', use_container_width=True):
-                st.session_state.page = 'home'  # 버튼 클릭 시 홈 페이지로 이동
-        with col2:
-            # '추천 시작' 버튼
-            if st.button('추천 시작하기!', icon='🍷', use_container_width=True):
-                st.session_state.page = 'wine_beginner_step1'  # 버튼 클릭 시 step1 페이지로 이동
+    st.title('🤔와린이 추천🤔')
+    st.write("당신은 와린이 시군요!! 당신에게 알맞은 와인을 추천해 드리겠습니다.")
+    col1, col2 = st.columns(2)
+    with col1:
+        # '홈으로 돌아가기' 버튼
+        if st.button('홈으로 돌아가기', icon='🏠', use_container_width=True):
+            st.session_state.page = 'home'  # 버튼 클릭 시 홈 페이지로 이동
+    with col2:
+        # '추천 시작' 버튼
+        if st.button('추천 시작하기!', icon='🍷', use_container_width=True):
+            st.session_state.page = 'wine_beginner_step1'  # 버튼 클릭 시 step1 페이지로 이동
 
     # '질문1' 페이지
-    elif st.session_state.page == 'wine_beginner_step1':
+    if st.session_state.page == 'wine_beginner_step1':
         st.session_state.selected_values = []
         st.title("Step 1. 더 선호하시는 것은 무엇입니까? ")
         if st.button('고기🥩', icon='🥩', use_container_width=True):
