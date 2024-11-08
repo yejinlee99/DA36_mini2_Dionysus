@@ -9,6 +9,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 nltk.download('punkt')
 nltk.download('punkt_tab')
 nltk.download('stopwords')
+nltk.download('wordnet')
 
 def wine_beginner_recommendation(value):
     wine = pd.read_csv('./data/archive/winemag-data-130k-v2.csv')
