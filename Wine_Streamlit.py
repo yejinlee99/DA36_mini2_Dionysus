@@ -106,6 +106,7 @@ elif st.session_state.page == 'wine_beginner_step2':
 # '질문3' 페이지
 elif st.session_state.page == 'wine_beginner_step3':
     st.title("Step 3. 더 선호하시는 것은 무엇입니까? ")
+
     if st.button('장미꽃🌹', icon = '🌹', use_container_width=True):
         answer3 = 'structure', 'firm', 'red', 'dark', 'rich'
         st.session_state.selected_values.append(answer3)
@@ -273,7 +274,7 @@ elif st.session_state.page == 'wine_beginner_final_result':
 
 
 
-
+<!--해빈 start-->
 
 # 음식에 어울리는 와인 추천 페이지
 elif st.session_state.page == 'wine_food':
@@ -285,7 +286,7 @@ elif st.session_state.page == 'wine_food':
     if st.button('홈으로 돌아가기'):
         st.session_state.page = 'home'  # 버튼 클릭 시 홈 페이지로 이동
 
-
+<!--해빈 end-->
 
 
 
