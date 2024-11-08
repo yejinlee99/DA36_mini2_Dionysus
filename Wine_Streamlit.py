@@ -1,5 +1,14 @@
 import streamlit as st
 from wine_beginner import *
+import pandas as pd
+import nltk
+import string
+from nltk.stem import WordNetLemmatizer
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.cluster import KMeans
+from sklearn.metrics.pairwise import cosine_similarity
+
+
 
 # 세션 상태를 사용하여 페이지를 추적
 if 'page' not in st.session_state:
