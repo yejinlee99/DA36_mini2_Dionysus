@@ -7,7 +7,7 @@ from sklearn.cluster import KMeans
 from sklearn.metrics.pairwise import cosine_similarity
 
 nltk.download('punkt')
-nltk.download('punk_tab')
+nltk.download('punkt_tab')
 nltk.download('stopwords')
 
 def wine_beginner_recommendation(value):
