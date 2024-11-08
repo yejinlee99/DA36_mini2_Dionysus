@@ -1,12 +1,5 @@
 import streamlit as st
 from wine_beginner import *
-import pandas as pd
-import nltk
-import string
-from nltk.stem import WordNetLemmatizer
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.cluster import KMeans
-from sklearn.metrics.pairwise import cosine_similarity
 
 
 
