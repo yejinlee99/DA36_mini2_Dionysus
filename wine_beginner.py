@@ -6,6 +6,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
 from sklearn.metrics.pairwise import cosine_similarity
 
+nltk.download('punkt')
+nltk.download('punk_tab')
+nltk.download('stopwords')
 
 def wine_beginner_recommendation(value):
     wine = pd.read_csv('./data/archive/winemag-data-130k-v2.csv')
