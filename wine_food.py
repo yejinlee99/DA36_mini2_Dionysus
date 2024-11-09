@@ -1,15 +1,15 @@
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-food_paring_df = pd.read_csv('data_cleansed.csv')
+food_paring_df = pd.read_csv('KimHaebin/data_cleansed.csv')
 
-# user_input_list = []
-# user_input = input('Which food?: ')
-# user_input_list.append(user_input)
+def content_based_food_pairing(user_input, max_price, min_price):
+    food_paring_df_new_added = concat_dataframe(user_input, food_paring_df=food_paring_df)
+    weighted_rating_ = weighted_rating(food_paring_df_new_added)
+    food_paring_df_new_added_wr = add_weighted_ratings_column(weighted_rating_, food_paring_df_new_added)
+    df_recommended_ratings = food_cosine_similarity_analysis(food_paring_df_new_added_wr, max_price, min_price)
+    return df_recommended_ratings
 
 def concat_dataframe(user_input, food_paring_df=food_paring_df):
     user_input_df = pd.DataFrame({
@@ -47,10 +47,9 @@ def weighted_rating(food_paring_df_new_added):
     m = food_paring_df_new_added['vintage_ratings_count'].quantile(0.5)
     v = food_paring_df_new_added['vintage_ratings_count']
     R = food_paring_df_new_added['vintage_ratings_average']
-    weighted_rating = (v / (v + m)) * R + (m / (v + m)) * C
-    return weighted_rating
+    return (v / (v + m)) * R + (m / (v + m)) * C
 
-def add_weighted_ratings_column(weighted_rating, food_paring_df_new_added):
+def add_weighted_ratings_column(weighted_rating_, food_paring_df_new_added):
     food_paring_df_new_added['weighted_ratings'] = weighted_rating(food_paring_df)
     food_paring_df_new_added_wr = food_paring_df_new_added
     return food_paring_df_new_added_wr
@@ -69,3 +68,14 @@ def food_cosine_similarity_analysis(food_paring_df_new_added_wr, max_price, min_
     df_recommended_ratings = df_recommended_price_range.sort_values(by='weighted_ratings', ascending=False)
     return df_recommended_ratings
 
+user_input = ['beef', 'spicy']
+max_price = 100000
+min_price = 0
+
+# print(concat_dataframe(user_input, food_paring_df=food_paring_df))
+# food_paring_df_new_added = concat_dataframe(user_input, food_paring_df=food_paring_df)
+# weighted_rating_ = weighted_rating(food_paring_df_new_added)
+# food_paring_df_new_added_wr = add_weighted_ratings_column(weighted_rating_, food_paring_df_new_added)
+# print(food_paring_df_new_added_wr)
+# df_recommended_ratings = food_cosine_similarity_analysis(food_paring_df_new_added_wr, max_price, min_price)
+# print(df_recommended_ratings)
