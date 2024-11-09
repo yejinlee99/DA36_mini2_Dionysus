@@ -30,6 +30,10 @@ def wine_preprocessing(data):
     # 컬럼 삭제
     columns = ['Unnamed: 0', 'taster_name', 'taster_twitter_handle']
     wine = wine.drop(columns, axis=1)
+
+    # 중복된 행 삭제
+    wine = wine.drop_duplicates()
+
     return wine
 
 def wine_beginner_recommendation(value):
