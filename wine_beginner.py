@@ -1,3 +1,4 @@
+import streamlit as st
 import pandas as pd
 import nltk
 import string
@@ -11,12 +12,12 @@ nltk.download('punkt_tab')
 nltk.download('stopwords')
 nltk.download('wordnet')
 
-def wine_beginner_recommendation(value):
-    wine = pd.read_csv('./data/archive/winemag-data-130k-v2.csv')
+def wine_preprocessing(data):
+    wine_beginner_df = pd.read_csv(data)
 
     # NaN 값 데이터(열) 삭제
     columns = ['country', 'variety']
-    wine = wine.dropna(subset=columns)
+    wine = wine_beginner_df.dropna(subset=columns)
 
     # 수치형 결측치 값은 각 컬럼의 평균을 집어넣는다.
     wine_price_mean = wine['price'].mean()
@@ -29,6 +30,10 @@ def wine_beginner_recommendation(value):
     # 컬럼 삭제
     columns = ['Unnamed: 0', 'taster_name', 'taster_twitter_handle']
     wine = wine.drop(columns, axis=1)
+    return wine
+
+def wine_beginner_recommendation(value):
+    wine = wine_preprocessing('./data/archive/winemag-data-130k-v2.csv')
 
     result = [", ".join(item) for item in value]
     final_result = "\n".join(result)
@@ -75,13 +80,19 @@ def wine_beginner_recommendation(value):
     review_sorted_index = review_sorted_index.reshape(-1)  # 자기자신 제외
 
     # 유사도가 높은 순으로 정렬된 와인 이름 조회
-    result_df = wine.iloc[review_sorted_index][['title', 'cluster']]
+    result_df = wine.iloc[review_sorted_index][['title', 'cluster', 'country', 'price', 'variety', 'winery']]
     review_sim = review_sim.reshape(-1)
     result_df['similarity'] = review_sim[review_sorted_index]
 
     # 와인 추천 top15
     result_title = result_df['title'].tolist()
-    return result_title
+    result_country = result_df['country'].tolist()
+    result_price = result_df['price'].tolist()
+    result_variety = result_df['variety'].tolist()
+    result_winery = result_df['winery'].tolist()
+
+    return result_title, result_country, result_price, result_variety, result_winery
+
 
 
 
