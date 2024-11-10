@@ -2,6 +2,7 @@ import streamlit as st
 from streamlit_pills import pills
 from wine_beginner import *
 from wine_food import *
+from wine_expert import *
 import time
 
 
@@ -62,11 +63,79 @@ if st.session_state.page == 'home':
 # 와잘알 추천 페이지
 elif st.session_state.page == 'wine_expert':
     st.title('🤓와잘알 추천 시스템🤓')
-    st.write("당신은 와잘알이시군요!! 당신에게 알맞은 와인을 추천해 드리겠습니다.")
+    st.write("📢당신은 와잘알이시군요!! ")
+    st.write("📢당신이 좋아하는 스타일의 와인을 추천해 드리겠습니다 😁👍")
+    col1, col2 = st.columns(2)
+    with col1:
+        # '홈으로 돌아가기' 버튼
+        if st.button('홈으로 돌아가기', icon='🏠', use_container_width=True):
+            st.session_state.page = 'home'  # 버튼 클릭 시 홈 페이지로 이동
+    with col2:
+        # '추천 시작' 버튼
+        if st.button('추천 시작하기!', icon='🍷', use_container_width=True):
+            st.session_state.page = 'wine_expert_input'
 
-    # '홈으로 돌아가기' 버튼
-    if st.button('홈으로 돌아가기'):
-        st.session_state.page = 'home'  # 버튼 클릭 시 홈 페이지로 이동
+elif st.session_state.page == 'wine_expert_input':
+    st.title("Your Wine Type🍷")
+
+    mapping = [1, 2, 3, 4, 5, 0]
+    st.write("1. 당신이 좋아하는 산도는?")
+    st.session_state.acidity_selected = st.feedback("stars", key="acidity_feedback")
+    if st.session_state.acidity_selected is None:
+        st.session_state.acidity_selected = -1
+    st.markdown(f"Acidity: {mapping[st.session_state.acidity_selected]} ")
+
+    st.write("2. 당신이 좋아하는 기포감(탄산감)은?")
+    st.session_state.fizziness_selected = st.feedback("stars", key="fizziness_feedback")
+    if st.session_state.fizziness_selected is None:
+        st.session_state.fizziness_selected = -1
+    st.markdown(f"Fizziness: {mapping[st.session_state.fizziness_selected]} ")
+
+    st.write("3. 당신이 좋아하는 강도(맛/향의 진함 정도)는?")
+    st.session_state.intensity_selected = st.feedback("stars",key="intensity_feedback")
+    if st.session_state.intensity_selected is None:
+        st.session_state.intensity_selected = -1
+    st.markdown(f"Acidity: {mapping[st.session_state.intensity_selected]} ")
+
+    st.write("4. 당신이 좋아하는 당도는?")
+    st.session_state.sweetness_selected = st.feedback("stars",key="sweetness_feedback")
+    if st.session_state.sweetness_selected is None:
+        st.session_state.sweetness_selected = -1
+    st.markdown(f"Acidity: {mapping[st.session_state.sweetness_selected]} ")
+
+    st.write("5. 당신이 좋아하는 탄닌감은?")
+    st.session_state.tannin_selected = st.feedback("stars",key="tannin_feedback")
+    if st.session_state.tannin_selected is None:
+        st.session_state.tannin_selected = -1
+    st.markdown(f"Acidity: {mapping[st.session_state.tannin_selected]} ")
+
+    st.session_state.input = (mapping[st.session_state.acidity_selected], mapping[st.session_state.fizziness_selected],
+             mapping[st.session_state.intensity_selected], mapping[st.session_state.sweetness_selected],
+             mapping[st.session_state.tannin_selected])
+
+    if st.button('결과 확인하러 가기🍇', icon='🍇', use_container_width=True):
+        st.session_state.page = 'wine_expert_result'
+
+# 맛잘알 결과 페이지
+elif st.session_state.page == 'wine_expert_result':
+    st.title('🤓와잘알 와인 추천 완료🤓')
+
+    wine_expert_result = wine_expert_recommendation(st.session_state.input)
+    mapping = [1, 2, 3, 4, 5, 0]
+    st.write(f"당신이 선택한 산도: {mapping[st.session_state.acidity_selected]}, 기포감: {mapping[st.session_state.fizziness_selected]}, \
+             강도: {mapping[st.session_state.intensity_selected]}, 당도: {mapping[st.session_state.sweetness_selected]}, \
+             탄닌:{mapping[st.session_state.tannin_selected]} 와/과 어울리는 와인 🍷Best 10🍷")
+    st.dataframe(wine_expert_result)
+
+    col1, col2 = st.columns(2)
+    with col1:
+        # '홈으로 돌아가기' 버튼
+        if st.button('홈으로 돌아가기', icon='🏠', use_container_width=True):
+            st.session_state.page = 'home'  # 버튼 클릭 시 홈 페이지로 이동
+    with col2:
+        # '다시 추천 받기' 버튼
+        if st.button('다시 추천 받기!', icon='🔄', use_container_width=True):
+            st.session_state.page = 'wine_expert_input'  # 버튼 클릭 시 다시 input으로 이동
 
 # 와린이 추천 페이지
 elif st.session_state.page == 'wine_beginner':
@@ -480,13 +549,13 @@ elif st.session_state.page == 'wine_food_input':
         # st.session_state.user_input = []
         st.session_state.page = 'wine_food_result'
 
-# 와린이 파이널 페이지
+# 맛잘알 결과 페이지
 elif st.session_state.page == 'wine_food_result':
     st.title('🍽️맛잘알 와인 추천 완료🍽️')
 
     wine_food_result = content_based_food_pairing(st.session_state.user_input, st.session_state.max_price, st.session_state.min_price)
 
-    st.write(f"당신이 선택한 {st.session_state.user_input}와/과 어울리는 와인은 🍷Best 10🍷")
+    st.write(f"당신이 선택한 {st.session_state.user_input} 와/과 어울리는 와인 🍷Best 10🍷")
     st.dataframe(wine_food_result)
     # st.write(f"🥇 Top 1. {wine_food_result[0]}")
     # st.write(f"🥈 Top 2. {wine_food_result[1]}")
@@ -500,7 +569,7 @@ elif st.session_state.page == 'wine_food_result':
     with col2:
         # '다시 추천 받기' 버튼
         if st.button('다시 추천 받기!', icon='🔄', use_container_width=True):
-            st.session_state.page = 'wine_food_input'  # 버튼 클릭 시 다시 step1 페이지로 이동
+            st.session_state.page = 'wine_food_input'  # 버튼 클릭 시 다시 input으로 이동
 
 
 
