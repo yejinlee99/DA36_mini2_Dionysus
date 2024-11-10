@@ -308,52 +308,76 @@ elif st.session_state.page == 'wine_beginner_final':
 
 # 와린이 파이널 페이지
 elif st.session_state.page == 'wine_beginner_final_result':
-    result_title, result_country, result_price, result_variety, result_winery = wine_beginner_recommendation(st.session_state.selected_values)
+    result_title, result_country, result_price, result_variety, result_winery, result_points = wine_beginner_recommendation(st.session_state.selected_values)
 
-    st.header("🍷당신이 좋아할 것 같은 와인 Best 3")
+    st.header("🍷 추천 와인 Best 3")
     st.header("🥇 Best 1")
     st.subheader(f"{result_title[0]}")
-    st.write(f"🌎 생산 나라 : {result_country[0]}")
-    st.write(f"🍇 품종 / 종류 : {result_variety[0]}")
-    st.write(f"🛖 와이너리 : {result_winery[0]}")
-    st.write(f"💲가격 ( USD ) : {result_price[0]}")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write(f"🌎 생산 나라 : {result_country[0]}")
+        st.write(f"🍇 품종 / 종류 : {result_variety[0]}")
+        st.write(f"🛖 와이너리 : {result_winery[0]}")
+    with col2:
+        st.write(f"🌟 평점 : :red[{result_points[0]}] / 100 점")
+        st.write(f"💲가격 ( USD ) : {result_price[0]}")
 
     st.header("🥈 Best 2")
     st.subheader(f"{result_title[1]}")
-    st.write(f"🌎 생산 나라 : {result_country[1]}")
-    st.write(f"🍇 품종 / 종류 : {result_variety[1]}")
-    st.write(f"🛖 와이너리 : {result_winery[1]}")
-    st.write(f"💲가격 ( USD ) : {result_price[1]}")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write(f"🌎 생산 나라 : {result_country[1]}")
+        st.write(f"🍇 품종 / 종류 : {result_variety[1]}")
+        st.write(f"🛖 와이너리 : {result_winery[1]}")
+    with col2:
+        st.write(f"🌟 평점 : :red[{result_points[1]}] / 100 점")
+        st.write(f"💲가격 ( USD ) : {result_price[1]}")
 
     st.header("🥉 Best 3")
     st.subheader(f"{result_title[2]}")
-    st.write(f"🌎 생산 나라 : {result_country[2]}")
-    st.write(f"🍇 품종 / 종류 : {result_variety[2]}")
-    st.write(f"🛖 와이너리 : {result_winery[2]}")
-    st.write(f"💲가격 ( USD ) : {result_price[2]}")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write(f"🌎 생산 나라 : {result_country[2]}")
+        st.write(f"🍇 품종 / 종류 : {result_variety[2]}")
+        st.write(f"🛖 와이너리 : {result_winery[2]}")
+    with col2:
+        st.write(f"🌟 평점 : :red[{result_points[2]}] / 100 점")
+        st.write(f"💲가격 ( USD ) : {result_price[2]}")
 
 
-    st.header("😵당신이 좋아하지 않을 것 같은 와인 Worst 3")
+    st.header("😵 비추천 와인 Worst 3")
     st.header("🖤 Worst 1")
     st.subheader(f"{result_title[-1]}")
-    st.write(f"🌎 생산 나라 : {result_country[-1]}")
-    st.write(f"🍇 품종 / 종류 : {result_variety[-1]}")
-    st.write(f"🛖 와이너리 : {result_winery[-1]}")
-    st.write(f"💲가격 ( USD ) : {result_price[-1]}")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write(f"🌎 생산 나라 : {result_country[-1]}")
+        st.write(f"🍇 품종 / 종류 : {result_variety[-1]}")
+        st.write(f"🛖 와이너리 : {result_winery[-1]}")
+    with col2:
+        st.write(f"🌟 평점 : :blue[{result_points[-1]}] / 100 점")
+        st.write(f"💲가격 ( USD ) : {result_price[-1]}")
 
     st.header("🖤 Worst 2")
     st.subheader(f"{result_title[-2]}")
-    st.write(f"🌎 생산 나라 : {result_country[-2]}")
-    st.write(f"🍇 품종 / 종류 : {result_variety[-2]}")
-    st.write(f"🛖 와이너리 : {result_winery[-2]}")
-    st.write(f"💲가격 ( USD ) : {result_price[-2]}")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write(f"🌎 생산 나라 : {result_country[-2]}")
+        st.write(f"🍇 품종 / 종류 : {result_variety[-2]}")
+        st.write(f"🛖 와이너리 : {result_winery[-2]}")
+    with col2:
+        st.write(f"🌟 평점 : :blue[{result_points[-2]}] / 100 점")
+        st.write(f"💲가격 ( USD ) : {result_price[-2]}")
 
     st.header("🖤 Worst 3")
     st.subheader(f"{result_title[-3]}")
-    st.write(f"🌎 생산 나라 : {result_country[-3]}")
-    st.write(f"🍇 품종 / 종류 : {result_variety[-3]}")
-    st.write(f"🛖 와이너리 : {result_winery[-3]}")
-    st.write(f"💲가격 ( USD ) : {result_price[-3]}")
+    col1, col2 = st.columns(2)
+    with col1:
+        st.write(f"🌎 생산 나라 : {result_country[-3]}")
+        st.write(f"🍇 품종 / 종류 : {result_variety[-3]}")
+        st.write(f"🛖 와이너리 : {result_winery[-3]}")
+    with col2:
+        st.write(f"🌟 평점 : :blue[{result_points[-3]}] / 100 점")
+        st.write(f"💲가격 ( USD ) : {result_price[-3]}")
 
     col1, col2 = st.columns(2)
     with col1:

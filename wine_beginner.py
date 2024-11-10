@@ -84,7 +84,7 @@ def wine_beginner_recommendation(value):
     review_sorted_index = review_sorted_index.reshape(-1)  # 자기자신 제외
 
     # 유사도가 높은 순으로 정렬된 와인 이름 조회
-    result_df = wine.iloc[review_sorted_index][['title', 'cluster', 'country', 'price', 'variety', 'winery']]
+    result_df = wine.iloc[review_sorted_index][['title', 'cluster','points', 'country', 'price', 'variety', 'winery']]
     review_sim = review_sim.reshape(-1)
     result_df['similarity'] = review_sim[review_sorted_index]
 
@@ -94,8 +94,10 @@ def wine_beginner_recommendation(value):
     result_price = result_df['price'].tolist()
     result_variety = result_df['variety'].tolist()
     result_winery = result_df['winery'].tolist()
+    result_points = result_df['points'].tolist()
 
-    return result_title, result_country, result_price, result_variety, result_winery
+
+    return result_title, result_country, result_price, result_variety, result_winery, result_points
 
 
 
