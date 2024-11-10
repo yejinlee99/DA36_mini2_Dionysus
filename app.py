@@ -95,19 +95,19 @@ elif st.session_state.page == 'wine_expert_input':
     st.session_state.intensity_selected = st.feedback("stars",key="intensity_feedback")
     if st.session_state.intensity_selected is None:
         st.session_state.intensity_selected = -1
-    st.markdown(f"Acidity: {mapping[st.session_state.intensity_selected]} ")
+    st.markdown(f"Intensity: {mapping[st.session_state.intensity_selected]} ")
 
     st.write("4. 당신이 좋아하는 당도는?")
     st.session_state.sweetness_selected = st.feedback("stars",key="sweetness_feedback")
     if st.session_state.sweetness_selected is None:
         st.session_state.sweetness_selected = -1
-    st.markdown(f"Acidity: {mapping[st.session_state.sweetness_selected]} ")
+    st.markdown(f"Sweetness: {mapping[st.session_state.sweetness_selected]} ")
 
     st.write("5. 당신이 좋아하는 탄닌감은?")
     st.session_state.tannin_selected = st.feedback("stars",key="tannin_feedback")
     if st.session_state.tannin_selected is None:
         st.session_state.tannin_selected = -1
-    st.markdown(f"Acidity: {mapping[st.session_state.tannin_selected]} ")
+    st.markdown(f"Tannin: {mapping[st.session_state.tannin_selected]} ")
 
     st.session_state.input = (mapping[st.session_state.acidity_selected], mapping[st.session_state.fizziness_selected],
              mapping[st.session_state.intensity_selected], mapping[st.session_state.sweetness_selected],

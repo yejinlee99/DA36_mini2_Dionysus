@@ -31,7 +31,7 @@ def concat_dataframe(user_input):
     })
 
     user_input_df['foods'] = user_input_df['foods'].apply(lambda food: ', '.join(food) if isinstance(food, list) else food)
-    print(user_input_df)
+    # print(user_input_df)
     food_paring_df_new_added = pd.concat([food_paring_df, user_input_df], ignore_index=True)
     return food_paring_df_new_added
 
