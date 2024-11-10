@@ -391,10 +391,10 @@ elif st.session_state.page == 'wine_beginner_final_result':
 
 # 음식에 어울리는 와인 추천 페이지
 elif st.session_state.page == 'wine_food':
-    st.title('맛잘알 와인 추천🍽️')
+    st.title('🍽️맛잘알 와인 추천🍽️')
 
-    st.write("당신은 음식에 어울리는 와인을 찾고 있으시군요!!")
-    st.write("당신에게 알맞은 와인을 추천해 드리겠습니다.")
+    st.write("📢 당신은 음식에 어울리는 와인을 찾고 있으시군요!")
+    st.write("📢 음식에 페어링할 와인을 추천해 드리겠습니다.")
     col1, col2 = st.columns(2)
     with col1:
         # '홈으로 돌아가기' 버튼
@@ -405,47 +405,40 @@ elif st.session_state.page == 'wine_food':
         if st.button('추천 시작하기!', icon='🍷', use_container_width=True):
             st.session_state.page = 'wine_food_input'  # 버튼 클릭 시 input 페이지로 이동
 
-elif st.session_state.page == 'wine_food_input':
-    st.title("함께 페어링할 음식을 골라주세요~")
 
-    # 세션 상태에 리스트가 없다면 초기화
-    if 'user_input' not in st.session_state:
-        st.session_state.user_input = []
-    if 'user_text' not in st.session_state:
-        st.session_state.user_text = []
+elif st.session_state.page == 'wine_food_input':
+    st.title("Food to pair with Wine🍽️")
+    st.session_state.user_input = []
+    st.session_state.user_text = []
 
     # 음식 종류 선택하기
     food_options = ['aperitif', 'appetizers', 'beef','cheese','cured','desserts','fish','goat',\
                     'junk','lamb','lean','lemon','meat','milk', 'mushrooms', 'pasta',\
                     'pork' ,'poultry' ,'raw', 'salmon', 'shellfish' ,'snacks','tuna','vegetarian']
-    st.session_state.add_food_option = st.pills("🥘어떤 음식과 곁들이실건가요?🥘", food_options, selection_mode="multi")
-    # 눌린 버튼 저장용 세션 상태 초기화
-    # if 'user_input' not in st.session_state:
-    #     st.session_state.user_input = []
-    #     st.session_state.add_food_option = []
-    for food in st.session_state.add_food_option:
+
+    add_food_option = st.pills("🥘어떤 음식과 곁들이실건가요?🥘", food_options, selection_mode="multi")
+    for food in add_food_option:
         if food not in st.session_state.user_input :
             if food:
                 st.session_state.user_input.append(food)
 
     # 맛 종류 선택하기
     taste_options = ['soft', 'spicy', 'mild', 'rich', 'lean', 'fruity', 'sweet']
-    st.session_state.add_taste_option = st.pills("👅어떤 맛의 음식인가요?👅", taste_options, selection_mode="multi")
-    # # 눌린 버튼 저장용 세션 상태 초기화
-    # if 'user_input' not in st.session_state:
-    #     st.session_state.user_input = []
-    #     st.session_state.add_taste_option = []
-    for taste in st.session_state.add_taste_option:
+    add_taste_option = st.pills("👅어떤 맛의 음식인가요?👅", taste_options, selection_mode="multi")
+    for taste in add_taste_option:
         if taste not in st.session_state.user_input:
             if taste:
                 st.session_state.user_input.append(taste)
 
-    st.session_state.add_food = st.text_input("👇직접 입력하고 싶어요👇",placeholder="Write your food and press Enter to apply")
-    if st.session_state.add_food not in st.session_state.user_input:
-        # 리스트에 입력된 내용을 추가
-        st.session_state.user_text.append(st.session_state.add_food)
-        # 입력 필드 초기화
-        # st.session_state.text_input = ""
+    # 직접 입력
+    add_food = st.text_input("👇직접 입력하고 싶어요👇",placeholder="Write your food and press Enter to apply")
+    if add_food not in st.session_state.user_input:
+        if add_food:
+            # 리스트에 입력된 내용을 추가
+            st.session_state.user_text.append(add_food)
+            # 입력 필드 초기화
+            st.session_state.text_input = ""
+
     if 'user_input' not in st.session_state:
         st.session_state.user_input = []
         st.session_state.user_text = []
@@ -457,33 +450,34 @@ elif st.session_state.page == 'wine_food_input':
     if st.button("Reset choice"):
         st.session_state.user_text = []
         st.session_state.user_input = []
-        st.session_state.add_food_option = []
-        st.session_state.add_taste_option = []
-        st.session_state.page = 'wine_food_input'
+        add_food_option = []
+        add_taste_option = []
 
     st.markdown(f"👉Your Choice: {st.session_state.user_input}.")
     # print(st.session_state.user_input)
 
     on = st.toggle("Price setting")
-    st.write("Price setting OFF range: 0 ~ 3,500,000 KRD")
+    st.write("※ 미설정 시 0 ~ 350만원 사이의 와인을 추천해드립니다")
+
+    st.session_state.max_price= 3_500_000
+    st.session_state.min_price = 0
 
     if on:
         price_range = st.slider(
-            '💲가격대를 설정해주세요💲(단위: KRD)',
+            '💲가격대를 설정해주세요💲단위: 원(KRD)',
             min_value=10_000,  # 최소값
             max_value=300_000,  # 최대값
             value=(30_000, 70_000),  # 기본 범위 값
             step=5_000  # 슬라이더 단위 간격 설정
         )
 
-        st.session_state.max_price = price_range[0]
-        st.session_state.min_price = price_range[1]
+        st.session_state.max_price = price_range[1]
+        st.session_state.min_price = price_range[0]
 
-    else:
-        st.session_state.max_price = 3_500_000
-        st.session_state.min_price = 0
 
     if st.button('결과 확인하러 가기🍇', icon='🍇', use_container_width=True):
+        # st.session_state.user_text = []
+        # st.session_state.user_input = []
         st.session_state.page = 'wine_food_result'
 
 # 와린이 파이널 페이지
@@ -492,7 +486,7 @@ elif st.session_state.page == 'wine_food_result':
 
     wine_food_result = content_based_food_pairing(st.session_state.user_input, st.session_state.max_price, st.session_state.min_price)
 
-    st.write(f"🍷당신이 선택한 음식 {st.session_state.user_input}과 어울리는 와인은🍷")
+    st.write(f"당신이 선택한 {st.session_state.user_input}와/과 어울리는 와인은 🍷Best 10🍷")
     st.dataframe(wine_food_result)
     # st.write(f"🥇 Top 1. {wine_food_result[0]}")
     # st.write(f"🥈 Top 2. {wine_food_result[1]}")
@@ -507,7 +501,6 @@ elif st.session_state.page == 'wine_food_result':
         # '다시 추천 받기' 버튼
         if st.button('다시 추천 받기!', icon='🔄', use_container_width=True):
             st.session_state.page = 'wine_food_input'  # 버튼 클릭 시 다시 step1 페이지로 이동
-
 
 
 
