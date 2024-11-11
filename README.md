@@ -52,7 +52,7 @@
 
 
 - **와린이 Data**<br>
-![image](https://github.com/user-attachments/assets/310456f5-8a1c-4af0-8b92-9b773dfe1215)(https://www.kaggle.com/datasets/zynicide/wine-reviews?select=winemag-data_first150k.csv)
+[![image](https://github.com/user-attachments/assets/310456f5-8a1c-4af0-8b92-9b773dfe1215)](https://www.kaggle.com/datasets/zynicide/wine-reviews?select=winemag-data_first150k.csv)
 
 사진을 클릭하면 해당 사이트가 나옵니다.
 
