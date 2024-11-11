@@ -11,7 +11,11 @@
 
 ### 🍇 Team Crew
 |      ![image](https://github.com/user-attachments/assets/adbecace-d98a-418a-9581-f570303ddbe9)
-       | **Haebin Kim**                              | **Jeongseok Shim**       |
+       |![image](https://github.com/user-attachments/assets/843c1342-a6a6-415d-8fbe-6f5611f6e88c)
+                | ![image](https://github.com/user-attachments/assets/324420a3-a674-4ee7-ac08-4285dbea6408)
+     |
+
+|---------------------------|---------------------------------------------|---------------------------|
 | **Yejin Lee**            | **Haebin Kim**                              | **Jeongseok Shim**       |
 |---------------------------|---------------------------------------------|---------------------------|
 | <와인과 와인 추천 구현>  | <맛잘알, 와잘알 와인 추천 구현>             | 팀원                      |
