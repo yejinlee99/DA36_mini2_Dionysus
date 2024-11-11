@@ -1,0 +1,713 @@
+{
+    "explore_vintage": {
+        "market": {
+            "country": "kr",
+            "currency": {
+                "code": "KRW",
+                "name": "South Korean Won",
+                "prefix": "₩",
+                "suffix": null
+            }
+        },
+        "records_matched": 3421,
+        "matches": [
+            {
+                "vintage": {
+                    "id": 177404982,
+                    "seo_name": "weingut-carl-loewen-eighteen-ninetysix-riesling-2023",
+                    "name": "Carl Loewen 1896 Riesling 2023",
+                    "statistics": {
+                        "status": "Normal",
+                        "ratings_count": 125,
+                        "ratings_average": 5,
+                        "labels_count": 16,
+                        "wine_ratings_count": 364,
+                        "wine_ratings_average": 4.6,
+                        "wine_status": ""
+                    },
+                    "image": {
+                        "location": "//images.vivino.com/thumbs/Q8yn9Dn7SZa_V_IBeD51yw_pl_480x640.png",
+                        "variations": {
+                            "bottle_large": "//images.vivino.com/thumbs/Q8yn9Dn7SZa_V_IBeD51yw_pb_x960.png",
+                            "bottle_medium": "//images.vivino.com/thumbs/Q8yn9Dn7SZa_V_IBeD51yw_pb_x600.png",
+                            "bottle_medium_square": "//images.vivino.com/thumbs/Q8yn9Dn7SZa_V_IBeD51yw_pb_600x600.png",
+                            "bottle_small": "//images.vivino.com/thumbs/Q8yn9Dn7SZa_V_IBeD51yw_pb_x300.png",
+                            "bottle_small_square": "//images.vivino.com/thumbs/Q8yn9Dn7SZa_V_IBeD51yw_pb_300x300.png",
+                            "label": "//images.vivino.com/thumbs/Q8yn9Dn7SZa_V_IBeD51yw_pl_480x640.png",
+                            "label_large": "//images.vivino.com/thumbs/Q8yn9Dn7SZa_V_IBeD51yw_pl_375x500.png",
+                            "label_medium": "//images.vivino.com/thumbs/Q8yn9Dn7SZa_V_IBeD51yw_pl_150x200.png",
+                            "label_medium_square": "//images.vivino.com/thumbs/Q8yn9Dn7SZa_V_IBeD51yw_pl_150x150.png",
+                            "label_small_square": "//images.vivino.com/thumbs/Q8yn9Dn7SZa_V_IBeD51yw_pl_80x80.png",
+                            "large": "//images.vivino.com/thumbs/Q8yn9Dn7SZa_V_IBeD51yw_pl_375x500.png",
+                            "medium": "//images.vivino.com/thumbs/Q8yn9Dn7SZa_V_IBeD51yw_pl_150x200.png",
+                            "medium_square": "//images.vivino.com/thumbs/Q8yn9Dn7SZa_V_IBeD51yw_pl_150x150.png",
+                            "small_square": "//images.vivino.com/thumbs/Q8yn9Dn7SZa_V_IBeD51yw_pl_80x80.png"
+                        }
+                    },
+                    "wine": {
+                        "id": 1945087,
+                        "name": "1896 Riesling",
+                        "seo_name": "eighteen-ninetysix-riesling",
+                        "type_id": 2,
+                        "vintage_type": 0,
+                        "is_natural": false,
+                        "region": {
+                            "id": 545,
+                            "name": "Mosel",
+                            "name_en": "Mosel-Saar-Ruwer",
+                            "seo_name": "mosel-saar-ruwer",
+                            "country": {
+                                "code": "de",
+                                "name": "Germany",
+                                "native_name": "Deutschland",
+                                "seo_name": "germany",
+                                "currency": {
+                                    "code": "EUR",
+                                    "name": "Euros",
+                                    "prefix": "€",
+                                    "suffix": null
+                                },
+                                "regions_count": 237,
+                                "users_count": 2828467,
+                                "wines_count": 174257,
+                                "wineries_count": 13731,
+                                "most_used_grapes": [
+                                    {
+                                        "id": 15,
+                                        "name": "Riesling",
+                                        "seo_name": "riesling",
+                                        "has_detailed_info": true,
+                                        "wines_count": 262136,
+                                        "parent_grape_id": null
+                                    },
+                                    {
+                                        "id": 299,
+                                        "name": "Spätburgunder",
+                                        "seo_name": "spatburgunder",
+                                        "has_detailed_info": false,
+                                        "wines_count": 50164,
+                                        "parent_grape_id": 14
+                                    },
+                                    {
+                                        "id": 355,
+                                        "name": "Weissburgunder",
+                                        "seo_name": "weissburgunder",
+                                        "has_detailed_info": false,
+                                        "wines_count": 33464,
+                                        "parent_grape_id": 36
+                                    }
+                                ]
+                            },
+                            "class": {
+                                "typecast_map": {
+                                    "background_image": {},
+                                    "class": {},
+                                    "location": {}
+                                }
+                            },
+                            "background_image": {
+                                "location": "//images.vivino.com/regions/backgrounds/opJWUh7pR8u3jKqcy3D13g.jpg",
+                                "variations": {
+                                    "large": "//thumbs.vivino.com/region_backgrounds/opJWUh7pR8u3jKqcy3D13g_1280x760.jpg",
+                                    "medium": "//thumbs.vivino.com/region_backgrounds/opJWUh7pR8u3jKqcy3D13g_600x356.jpg"
+                                }
+                            }
+                        },
+                        "winery": {
+                            "id": 3832,
+                            "name": "Carl Loewen",
+                            "seo_name": "weingut-carl-loewen",
+                            "status": 0,
+                            "background_image": null
+                        },
+                        "taste": {
+                            "structure": {
+                                "acidity": 4.61,
+                                "fizziness": null,
+                                "intensity": 3.32,
+                                "sweetness": 2.05,
+                                "tannin": null,
+                                "user_structure_count": 47,
+                                "calculated_structure_count": 21
+                            },
+                            "flavor": [
+                                {
+                                    "group": "tree_fruit",
+                                    "stats": {
+                                        "count": 26,
+                                        "score": 4200
+                                    },
+                                    "primary_keywords": [
+                                        {
+                                            "id": 9,
+                                            "name": "apple",
+                                            "count": 8
+                                        },
+                                        {
+                                            "id": 315,
+                                            "name": "pear",
+                                            "count": 7
+                                        },
+                                        {
+                                            "id": 271,
+                                            "name": "melon",
+                                            "count": 6
+                                        },
+                                        {
+                                            "id": 11,
+                                            "name": "apricot",
+                                            "count": 5
+                                        },
+                                        {
+                                            "id": 195,
+                                            "name": "green apple",
+                                            "count": 4
+                                        },
+                                        {
+                                            "id": 310,
+                                            "name": "peach",
+                                            "count": 3
+                                        },
+                                        {
+                                            "id": 288,
+                                            "name": "nectarine",
+                                            "count": 2
+                                        },
+                                        {
+                                            "id": 458,
+                                            "name": "yellow apple",
+                                            "count": 2
+                                        },
+                                        {
+                                            "id": 78,
+                                            "name": "cantaloupe",
+                                            "count": 2
+                                        },
+                                        {
+                                            "id": 469,
+                                            "name": "stone fruit",
+                                            "count": 1
+                                        },
+                                        {
+                                            "id": 448,
+                                            "name": "white peach",
+                                            "count": 1
+                                        },
+                                        {
+                                            "id": 460,
+                                            "name": "yellow peach",
+                                            "count": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "group": "earth",
+                                    "stats": {
+                                        "count": 23,
+                                        "score": 3740
+                                    },
+                                    "primary_keywords": [
+                                        {
+                                            "id": 218,
+                                            "name": "honey",
+                                            "count": 14
+                                        },
+                                        {
+                                            "id": 276,
+                                            "name": "minerals",
+                                            "count": 9
+                                        },
+                                        {
+                                            "id": 398,
+                                            "name": "stone",
+                                            "count": 4
+                                        },
+                                        {
+                                            "id": 377,
+                                            "name": "salt",
+                                            "count": 4
+                                        },
+                                        {
+                                            "id": 325,
+                                            "name": "petroleum",
+                                            "count": 3
+                                        },
+                                        {
+                                            "id": 181,
+                                            "name": "ginger",
+                                            "count": 2
+                                        },
+                                        {
+                                            "id": 441,
+                                            "name": "wax",
+                                            "count": 1
+                                        },
+                                        {
+                                            "id": 128,
+                                            "name": "crushed rocks",
+                                            "count": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "group": "citrus_fruit",
+                                    "stats": {
+                                        "count": 19,
+                                        "score": 2400
+                                    },
+                                    "primary_keywords": [
+                                        {
+                                            "id": 106,
+                                            "name": "citrus",
+                                            "count": 9
+                                        },
+                                        {
+                                            "id": 252,
+                                            "name": "lime",
+                                            "count": 6
+                                        },
+                                        {
+                                            "id": 190,
+                                            "name": "grapefruit",
+                                            "count": 3
+                                        },
+                                        {
+                                            "id": 243,
+                                            "name": "lemon",
+                                            "count": 3
+                                        },
+                                        {
+                                            "id": 298,
+                                            "name": "orange",
+                                            "count": 2
+                                        },
+                                        {
+                                            "id": 246,
+                                            "name": "lemon peel",
+                                            "count": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "group": "microbio",
+                                    "stats": {
+                                        "count": 14,
+                                        "score": 1767
+                                    },
+                                    "primary_keywords": [
+                                        {
+                                            "id": 123,
+                                            "name": "cream",
+                                            "count": 11
+                                        },
+                                        {
+                                            "id": 457,
+                                            "name": "yeast",
+                                            "count": 2
+                                        },
+                                        {
+                                            "id": 91,
+                                            "name": "cheese",
+                                            "count": 2
+                                        },
+                                        {
+                                            "id": 464,
+                                            "name": "yogurt",
+                                            "count": 1
+                                        },
+                                        {
+                                            "id": 92,
+                                            "name": "cheesy",
+                                            "count": 1
+                                        },
+                                        {
+                                            "id": 23,
+                                            "name": "banana",
+                                            "count": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "group": "tropical_fruit",
+                                    "stats": {
+                                        "count": 8,
+                                        "score": 933
+                                    },
+                                    "primary_keywords": [
+                                        {
+                                            "id": 306,
+                                            "name": "passion fruit",
+                                            "count": 4
+                                        },
+                                        {
+                                            "id": 256,
+                                            "name": "lychee",
+                                            "count": 2
+                                        },
+                                        {
+                                            "id": 261,
+                                            "name": "mango",
+                                            "count": 2
+                                        },
+                                        {
+                                            "id": 329,
+                                            "name": "pineapple",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "secondary_keywords": [
+                                        {
+                                            "id": 23,
+                                            "name": "banana",
+                                            "count": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "group": "spices",
+                                    "stats": {
+                                        "count": 3,
+                                        "score": 185
+                                    },
+                                    "primary_keywords": [
+                                        {
+                                            "id": 161,
+                                            "name": "fennel",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "secondary_keywords": [
+                                        {
+                                            "id": 181,
+                                            "name": "ginger",
+                                            "count": 2
+                                        },
+                                        {
+                                            "id": 138,
+                                            "name": "dill",
+                                            "count": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "group": "floral",
+                                    "stats": {
+                                        "count": 3,
+                                        "score": 400
+                                    },
+                                    "primary_keywords": [
+                                        {
+                                            "id": 436,
+                                            "name": "violet",
+                                            "count": 1
+                                        },
+                                        {
+                                            "id": 230,
+                                            "name": "jasmine",
+                                            "count": 1
+                                        },
+                                        {
+                                            "id": 10,
+                                            "name": "apple blossom",
+                                            "count": 1
+                                        },
+                                        {
+                                            "id": 322,
+                                            "name": "perfume",
+                                            "count": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "group": "oak",
+                                    "stats": {
+                                        "count": 3,
+                                        "score": 200
+                                    },
+                                    "primary_keywords": [
+                                        {
+                                            "id": 117,
+                                            "name": "coffee",
+                                            "count": 1
+                                        },
+                                        {
+                                            "id": 138,
+                                            "name": "dill",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "secondary_keywords": [
+                                        {
+                                            "id": 62,
+                                            "name": "brioche",
+                                            "count": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "group": "vegetal",
+                                    "stats": {
+                                        "count": 2,
+                                        "score": 200
+                                    },
+                                    "primary_keywords": [
+                                        {
+                                            "id": 193,
+                                            "name": "grass",
+                                            "count": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "group": "non_oak",
+                                    "stats": {
+                                        "count": 2,
+                                        "score": 75
+                                    },
+                                    "primary_keywords": [
+                                        {
+                                            "id": 62,
+                                            "name": "brioche",
+                                            "count": 1
+                                        }
+                                    ],
+                                    "secondary_keywords": [
+                                        {
+                                            "id": 117,
+                                            "name": "coffee",
+                                            "count": 1
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "statistics": null,
+                        "style": {
+                            "id": 186,
+                            "seo_name": "german-riesling",
+                            "regional_name": "German",
+                            "varietal_name": "Riesling",
+                            "name": "German Riesling",
+                            "background_image": null,
+                            "image": null,
+                            "description": "Riesling is without question Germany's favorite grape. Widely planted, though once derided, Riesling is the superstar of the white wine world at the moment.\n\nThere is a lot of scope for versatility with this sweet, viscous wine, though you can expect to get hints of tropical fruit, nectarine, melon and pineapple from a solid Riesling.\n\nThe grape originated in the Rhine region of Germany, and the best of them are said to grow along the banks of the Mosel River on the beautiful steep, south facing hills.\n\nThere are six categories of Riesling which indicate the ripeness of the grapes. Kabinett is considered “off-dry” and is a typically ripe grape. Spätlese is riper and therefor sweeter, and Auslese is even riper still. Beyond on that you have Beerenauslese, Trockenbeerenauslese and Eiswein (or ice wine), all getting sweeter, more viscous and more expensive.\n\nIt's a favorite in the food and beverage industry because of its willingness to play with a wide variety of foods, particular spicy dishes. The current Asian fusion boom is thought to have had a tremendous effect on Riesling's popularity.",
+                            "blurb": null,
+                            "interesting_facts": [
+                                "Riesling is grown all over the world and thrives in cool to warm climates.",
+                                "Riesling is one of the few white wines that develops and improves with age.",
+                                "There are an unusually high number of German Riesling producers that carry the prefix “Dr.”"
+                            ],
+                            "body": 2,
+                            "body_description": "Light-bodied",
+                            "acidity": 3,
+                            "acidity_description": "High",
+                            "country": {
+                                "code": "de",
+                                "name": "Germany",
+                                "native_name": "Deutschland",
+                                "seo_name": "germany",
+                                "currency": {
+                                    "code": "EUR",
+                                    "name": "Euros",
+                                    "prefix": "€",
+                                    "suffix": null
+                                },
+                                "regions_count": 237,
+                                "users_count": 2828467,
+                                "wines_count": 174257,
+                                "wineries_count": 13731,
+                                "most_used_grapes": [
+                                    {
+                                        "id": 15,
+                                        "name": "Riesling",
+                                        "seo_name": "riesling",
+                                        "has_detailed_info": true,
+                                        "wines_count": 262136,
+                                        "parent_grape_id": null
+                                    },
+                                    {
+                                        "id": 299,
+                                        "name": "Spätburgunder",
+                                        "seo_name": "spatburgunder",
+                                        "has_detailed_info": false,
+                                        "wines_count": 50164,
+                                        "parent_grape_id": 14
+                                    },
+                                    {
+                                        "id": 355,
+                                        "name": "Weissburgunder",
+                                        "seo_name": "weissburgunder",
+                                        "has_detailed_info": false,
+                                        "wines_count": 33464,
+                                        "parent_grape_id": 36
+                                    }
+                                ]
+                            },
+                            "wine_type_id": 2,
+                            "food": [
+                                {
+                                    "id": 10,
+                                    "name": "Pork",
+                                    "weight": 0.5,
+                                    "background_image": {
+                                        "location": "//images.vivino.com/backgrounds/foods/10_pork.png",
+                                        "variations": {
+                                            "small": "//images.vivino.com/backgrounds/foods/thumbs/10_pork_932x810.png"
+                                        }
+                                    },
+                                    "seo_name": "pork"
+                                },
+                                {
+                                    "id": 13,
+                                    "name": "Shellfish",
+                                    "weight": 0.5,
+                                    "background_image": {
+                                        "location": "//images.vivino.com/backgrounds/foods/13_shellfish.png",
+                                        "variations": {
+                                            "small": "//images.vivino.com/backgrounds/foods/thumbs/13_shellfish_932x810.png"
+                                        }
+                                    },
+                                    "seo_name": "shellfish"
+                                },
+                                {
+                                    "id": 15,
+                                    "name": "Spicy food",
+                                    "weight": 0,
+                                    "background_image": {
+                                        "location": "//images.vivino.com/backgrounds/foods/15_spicyfood.png",
+                                        "variations": {
+                                            "small": "//images.vivino.com/backgrounds/foods/thumbs/15_spicyfood_932x810.png"
+                                        }
+                                    },
+                                    "seo_name": "spicy-food"
+                                },
+                                {
+                                    "id": 20,
+                                    "name": "Poultry",
+                                    "weight": 0.5,
+                                    "background_image": {
+                                        "location": "//images.vivino.com/backgrounds/foods/20_chicken.png",
+                                        "variations": {
+                                            "small": "//images.vivino.com/backgrounds/foods/thumbs/20_chicken_932x810.png"
+                                        }
+                                    },
+                                    "seo_name": "poultry"
+                                },
+                                {
+                                    "id": 41,
+                                    "name": "Cured Meat",
+                                    "weight": 0,
+                                    "background_image": {
+                                        "location": "//images.vivino.com/backgrounds/foods/41_curedmeat.png",
+                                        "variations": {
+                                            "small": "//images.vivino.com/backgrounds/foods/thumbs/41_curedmeat_932x810.png"
+                                        }
+                                    },
+                                    "seo_name": null
+                                }
+                            ],
+                            "grapes": [
+                                {
+                                    "id": 15,
+                                    "name": "Riesling",
+                                    "seo_name": "riesling",
+                                    "has_detailed_info": true,
+                                    "wines_count": 262136,
+                                    "parent_grape_id": null
+                                }
+                            ],
+                            "region": null,
+                            "parent_style_id": 785,
+                            "hidden": false,
+                            "statistics": {
+                                "wines_count": 40970,
+                                "aggregated_wines_count": 40970
+                            },
+                            "vintage_mask": "1<",
+                            "baseline_structure": {
+                                "acidity": 5.0,
+                                "fizziness": null,
+                                "intensity": 3.0,
+                                "sweetness": 1.0,
+                                "tannin": null
+                            }
+                        },
+                        "has_valid_ratings": false
+                    },
+                    "year": 2023,
+                    "grapes": null,
+                    "has_valid_ratings": true
+                },
+                "price": {
+                    "id": 36980675,
+                    "merchant_id": 1943,
+                    "amount": 82045,
+                    "discounted_from": 0,
+                    "discount_percent": null,
+                    "type": "ppc",
+                    "sku": "",
+                    "url": "https://www.proidee.de/weine/weissweine/carl-loewen-1896-riesling-2023-mosel-deutschland-1-flasche-a-075-l",
+                    "visibility": 1,
+                    "bottle_type_id": 1,
+                    "currency": {
+                        "code": "KRW",
+                        "name": "South Korean Won",
+                        "prefix": "₩",
+                        "suffix": null
+                    },
+                    "xms": 0,
+                    "xmphs": false,
+                    "price_group_id": null,
+                    "vfm_score": 0,
+                    "vfm_category": {
+                        "id": 0,
+                        "title": "Value Unavailable",
+                        "subtitle": "We’re still gathering data to determine this wine’s value score",
+                        "barometer_position": null
+                    },
+                    "bottle_type": {
+                        "id": 1,
+                        "name": "Bottle (0.75l)",
+                        "short_name": "bottle",
+                        "short_name_plural": "bottles",
+                        "volume_ml": 750
+                    }
+                },
+                "prices": [
+                    {
+                        "id": 36980675,
+                        "merchant_id": 1943,
+                        "amount": 82045,
+                        "discounted_from": 0,
+                        "discount_percent": null,
+                        "type": "ppc",
+                        "sku": "",
+                        "url": "https://www.proidee.de/weine/weissweine/carl-loewen-1896-riesling-2023-mosel-deutschland-1-flasche-a-075-l",
+                        "visibility": 1,
+                        "bottle_type_id": 1,
+                        "currency": {
+                            "code": "KRW",
+                            "name": "South Korean Won",
+                            "prefix": "₩",
+                            "suffix": null
+                        },
+                        "xms": 0,
+                        "xmphs": false,
+                        "price_group_id": null,
+                        "vfm_score": 0,
+                        "vfm_category": {
+                            "id": 0,
+                            "title": "Value Unavailable",
+                            "subtitle": "We’re still gathering data to determine this wine’s value score",
+                            "barometer_position": null
+                        },
+                        "bottle_type": {
+                            "id": 1,
+                            "name": "Bottle (0.75l)",
+                            "short_name": "bottle",
+                            "short_name_plural": "bottles",
+                            "volume_ml": 750
+                        }
+                    }
+                ]
+            },
