@@ -116,7 +116,7 @@ elif st.session_state.page == 'wine_expert_input':
     if st.button('결과 확인하러 가기🍇', icon='🍇', use_container_width=True):
         st.session_state.page = 'wine_expert_result'
 
-# 맛잘알 결과 페이지
+# 와잘알 결과 페이지
 elif st.session_state.page == 'wine_expert_result':
     st.title('🤓와잘알 와인 추천 완료🤓')
 
@@ -126,6 +126,10 @@ elif st.session_state.page == 'wine_expert_result':
              강도: {mapping[st.session_state.intensity_selected]}, 당도: {mapping[st.session_state.sweetness_selected]}, \
              탄닌:{mapping[st.session_state.tannin_selected]} 와/과 어울리는 와인 🍷Best 10🍷")
     st.dataframe(wine_expert_result)
+    # Streamlit을 사용하여 시각화
+    st.write("🍾와인 클러스터링 시각화🍾")
+    wine_expert_chart = show_cluster(st.session_state.input)
+    st.scatter_chart(wine_expert_chart, x='PCA1', y='PCA2', color='Cluster')
 
     col1, col2 = st.columns(2)
     with col1:
