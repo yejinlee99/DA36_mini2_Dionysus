@@ -81,10 +81,28 @@
 ![image](https://github.com/user-attachments/assets/d8b91890-e764-458d-b4dc-1f413def55d1)
 ![image](https://github.com/user-attachments/assets/b26c66d7-251b-4e40-8c39-32cd627e45fd)
 
+## 🍇 Our Recommendation System 🍇
 
+- **와잘알ver.**
+![image](https://github.com/user-attachments/assets/5c5e3bb5-f02e-4874-bfb9-9af32b960446)
+
+- **와린이ver.**
+![image](https://github.com/user-attachments/assets/3c1bdc48-1e6b-4f80-a4dd-80c62f57e6ee)
+
+
+- **맛잘알ver.**
+![image](https://github.com/user-attachments/assets/d031912b-4477-48aa-9401-2baff2d9f076)
 
   
+- **와인 추천 결과**
+    - **Best 3**
+      ![image](https://github.com/user-attachments/assets/abd6c0f9-6f51-4cd8-b270-5cc625d6129a)
 
+    - **Worst 3**
+      ![image](https://github.com/user-attachments/assets/8fb626c5-70e6-4f20-a92c-6819243c6d6f)
+
+ 
+      
 
 
 
