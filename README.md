@@ -7,7 +7,8 @@
   - 시간절약 (Time-Saving)
 
 ## 🍇 참고 사이트 🍇
-[VIVINO](https://www.vivino.com/US/en/)
+[![image](https://github.com/user-attachments/assets/713b7b57-ba37-4e89-a7bb-f2ab2b2f5856)
+](https://www.vivino.com/US/en/)
 
 ## 🍇 Team Crew 🍇
 <div style="display: flex; align-items: center;">
