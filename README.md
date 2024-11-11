@@ -102,14 +102,14 @@
   ![image](https://github.com/user-attachments/assets/4e005d8a-43ca-4a74-a2bd-9d86730f9e21)
 
 
+## 🍇 Streamlit App 🍇
+[![image](https://github.com/user-attachments/assets/74016d81-546a-40ba-aaa6-6d9e63995d4b)
+](https://da36mini2dionysus-29g5hzkbgzgnskeescxfnc.streamlit.app/)
+
+
+## 🍇 구현 영상 🍇
 
 
  
       
-
-
-
-
-
-
 
