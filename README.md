@@ -44,12 +44,18 @@
 </div>
 
 ## 🍇 DATA Introduction 🍇
-- **와잘알/맛잘알 Data**
+- **와잘알/맛잘알 Data**<br>
 [![image](https://github.com/user-attachments/assets/713b7b57-ba37-4e89-a7bb-f2ab2b2f5856)](https://www.vivino.com/explore)
 
-사진을 클릭하세요.
+사진을 클릭하면 해당 사이트가 나옵니다.
 
-- **와린이 Data**
+
+
+- **와린이 Data**<br>
+![image](https://github.com/user-attachments/assets/5275007f-7970-41b9-847f-9f58ce810fcb)(https://www.kaggle.com/datasets/zynicide/wine-reviews?select=winemag-data_first150k.csv)
+
+사진을 클릭하면 해당 사이트가 나옵니다.
+
 
 
 
