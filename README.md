@@ -10,6 +10,8 @@
 [VIVINO](https://www.vivino.com/US/en/)
 
 ### 🍇 Team Crew
+|      ![image](https://github.com/user-attachments/assets/adbecace-d98a-418a-9581-f570303ddbe9)
+       | **Haebin Kim**                              | **Jeongseok Shim**       |
 | **Yejin Lee**            | **Haebin Kim**                              | **Jeongseok Shim**       |
 |---------------------------|---------------------------------------------|---------------------------|
 | <와인과 와인 추천 구현>  | <맛잘알, 와잘알 와인 추천 구현>             | 팀원                      |
