@@ -1,15 +1,15 @@
 # DA36_mini2_Dionysus
 # 🍷Wine Recommendation System🍷
 
-## 🍇 와인 추천의 필요성
+## 🍇 와인 추천의 필요성 🍇
   - 개인화된 추천 (Personalized Recommendation)
   - 새로운 와인 발견 (Discover New Wines)
   - 시간절약 (Time-Saving)
 
-## 🍇 참고 사이트
+## 🍇 참고 사이트 🍇
 [VIVINO](https://www.vivino.com/US/en/)
 
-## 🍇 Team Crew
+## 🍇 Team Crew 🍇
 <div style="display: flex; align-items: center;">
 
   <img src="https://github.com/user-attachments/assets/843c1342-a6a6-415d-8fbe-6f5611f6e88c" style="width: 100px; margin-right: 20px;">
@@ -40,7 +40,13 @@
 
 </div>
 
-            
+## 🍇 DATA Introduction 🍇
+- **와잘알/맛잘알 Data**
+[VIVINO](https://www.vivino.com/explore)
+
+- **와린이 Data**
+
+
 
 
 
