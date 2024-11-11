@@ -83,31 +83,26 @@
 
 ## 🍇 Our Recommendation System 🍇
 
-- **와잘알ver.**
+- **와잘알ver.**<br>
 ![image](https://github.com/user-attachments/assets/5c5e3bb5-f02e-4874-bfb9-9af32b960446)
 
-- **와린이ver.**
+- **와린이ver.**<br>
 ![image](https://github.com/user-attachments/assets/3c1bdc48-1e6b-4f80-a4dd-80c62f57e6ee)
 
 
-- **맛잘알ver.**
+- **맛잘알ver.**<br>
 ![image](https://github.com/user-attachments/assets/d031912b-4477-48aa-9401-2baff2d9f076)
 
   
 - **와인 추천 결과**
-<div style="display: flex; justify-content: space-between;">
+  - **Best 3**<br>
+  ![image](https://github.com/user-attachments/assets/a753feb3-9e13-471c-b603-1d4a54c1e3fa)
 
-  <div style="text-align: center;">
-    <strong>* Best 3</strong><br>
-    <img src="https://github.com/user-attachments/assets/abd6c0f9-6f51-4cd8-b270-5cc625d6129a" style="width: 200px;">
-  </div>
+  - **Worst 3**<br>
+  ![image](https://github.com/user-attachments/assets/4e005d8a-43ca-4a74-a2bd-9d86730f9e21)
 
-  <div style="text-align: center;">
-    <strong>* Worst 3</strong><br>
-    <img src="https://github.com/user-attachments/assets/8fb626c5-70e6-4f20-a92c-6819243c6d6f" style="width: 200px;">
-  </div>
 
-</div>
+
 
  
       
