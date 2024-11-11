@@ -95,11 +95,19 @@
 
   
 - **와인 추천 결과**
-    - **Best 3**
-      ![image](https://github.com/user-attachments/assets/abd6c0f9-6f51-4cd8-b270-5cc625d6129a)
+<div style="display: flex; justify-content: space-between;">
 
-    - **Worst 3**
-      ![image](https://github.com/user-attachments/assets/8fb626c5-70e6-4f20-a92c-6819243c6d6f)
+  <div style="text-align: center;">
+    <strong>Best 3</strong><br>
+    <img src="https://github.com/user-attachments/assets/abd6c0f9-6f51-4cd8-b270-5cc625d6129a" style="width: 200px;">
+  </div>
+
+  <div style="text-align: center;">
+    <strong>Worst 3</strong><br>
+    <img src="https://github.com/user-attachments/assets/8fb626c5-70e6-4f20-a92c-6819243c6d6f" style="width: 200px;">
+  </div>
+
+</div>
 
  
       
