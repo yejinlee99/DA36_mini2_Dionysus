@@ -44,18 +44,40 @@
 </div>
 
 ## 🍇 DATA Introduction 🍇
-- **와잘알/맛잘알 Data**<br>
-[**와잘알/맛잘알 Data**](https://www.vivino.com/explore)
+- [**와잘알/맛잘알 Data**](https://www.vivino.com/explore)
+    - API 호출하여 JSON 파일 추출
+    - **Columns**   총 22 columns x 3675 rows
+        - *wine_ratings_count : 와인 평점 수*
+        - *wine_ratings_average : 와인 평점*
+        - *foods : 와인에 어울리는 음식*
+        - vintage_price : 가격
+        - vintage_wine_name : 와인 이름 (이름 + 년도)
+        - vintage_wine_type : 와인 타입 (id mapping to type)
+        - varietal_name : 포도 품종
+        - variety : 와인 품종
+        - winery : 와이너리 (양조장)
+    - **Row Count**
+        - 중복값 제거 후 df.shape = (2024, 22)
 
-사진을 클릭하면 해당 사이트가 나옵니다.
+- [**와린이 Data**](https://www.kaggle.com/datasets/zynicide/wine-reviews?select=winemag-data_first150k.csv)
+    - **Columns**
+        - *description : 리뷰*
+        - *title : 와인 이름*
+        - country : 나라 이름
+        - points : 와인 평점
+        - price : 와인 가격
+        - variety : 와인 품종
+        - winery : 와이너리 (양조장)
+    - **Row Count**
+        - 중복된 행 제거 후 29,971 ⇨ 119,928
+    - **Description words**
+        - 68 words
+        - 단어 벡터화 제외 5% 이하, 90% 이상 
 
 
 
 
-- **와린이 Data**<br>
-[![image](https://github.com/user-attachments/assets/310456f5-8a1c-4af0-8b92-9b773dfe1215)](https://www.kaggle.com/datasets/zynicide/wine-reviews?select=winemag-data_first150k.csv)
-
-사진을 클릭하면 해당 사이트가 나옵니다.
+  
 
 
 
