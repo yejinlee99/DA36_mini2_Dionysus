@@ -9,6 +9,7 @@
 ## 🍇 참고 사이트 🍇
 [![image](https://github.com/user-attachments/assets/713b7b57-ba37-4e89-a7bb-f2ab2b2f5856)
 ](https://www.vivino.com/US/en/)
+사진을 클릭하세요.
 
 ## 🍇 Team Crew 🍇
 <div style="display: flex; align-items: center;">
@@ -43,7 +44,9 @@
 
 ## 🍇 DATA Introduction 🍇
 - **와잘알/맛잘알 Data**
-[VIVINO](https://www.vivino.com/explore)
+[![image](https://github.com/user-attachments/assets/713b7b57-ba37-4e89-a7bb-f2ab2b2f5856)
+(https://www.vivino.com/explore)
+사진을 클릭하세요.
 
 - **와린이 Data**
 
