@@ -87,6 +87,9 @@
 ![image](https://github.com/user-attachments/assets/5c5e3bb5-f02e-4874-bfb9-9af32b960446)
 
 - **와린이ver.**<br>
+와린이는 와인 + 어린이의 합성어 입니다. 
+
+
 ![image](https://github.com/user-attachments/assets/3c1bdc48-1e6b-4f80-a4dd-80c62f57e6ee)
 
 
