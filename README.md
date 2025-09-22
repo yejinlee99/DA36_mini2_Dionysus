@@ -1,5 +1,6 @@
 # DA36_mini2_Dionysus
 # 🍷Wine Recommendation System🍷
+<img width="1188" height="668" alt="스크린샷 2025-09-22 오후 12 24 17" src="https://github.com/user-attachments/assets/8b9c926a-c8db-453f-8533-5f608d2ca193" />
 
 ## 🍇 와인 추천의 필요성 🍇
   - 개인화된 추천 (Personalized Recommendation)
