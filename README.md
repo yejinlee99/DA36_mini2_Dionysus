@@ -133,7 +133,121 @@
 [![썸네일](https://github.com/user-attachments/assets/3c4ac3b1-5403-4942-ae89-35263034488f)](https://youtu.be/Fy1aycHWAVM)
 
 
+<br><br><br><br><br>
+## 🇺🇸 English
+## 🍇 Why a Wine Recommendation System 🍇
+- Personalized recommendations  
+- Discover new wines  
+- Save time
 
+## 🍇 Reference Site 🍇
+[![image](https://github.com/user-attachments/assets/713b7b57-ba37-4e89-a7bb-f2ab2b2f5856)
+](https://www.vivino.com/US/en/)
+
+Click the image.
+
+## 🍇 Team Crew 🍇
+
+<div style="display: flex; align-items: center;">
+  <img src="https://github.com/user-attachments/assets/843c1342-a6a6-415d-8fbe-6f5611f6e88c" style="width: 100px; margin-right: 20px;">
+  <div>
+    <strong>Haebin Kim</strong> &lt;Implemented recommendations for wine-savvy users&gt;<br>
+    [About] A true wine lover and foodie. Can enjoy up to three bottles with great food. Idea contributor.
+  </div>
+</div>
+
+<div style="display: flex; align-items: center;">
+  <img src="https://github.com/user-attachments/assets/adbecace-d98a-418a-9581-f570303ddbe9" style="width: 100px; margin-right: 20px;">
+  <div>
+    <strong>Yejin Lee</strong> &lt;Implemented recommendations for wine beginners (“Warin-i”)&gt;<br>
+    [About] Used to know only “sparkling / red / white,” but now on the way to becoming a wine knower!
+  </div>
+</div>
+
+<div style="display: flex; align-items: center;">
+  <img src="https://github.com/user-attachments/assets/324420a3-a674-4ee7-ac08-4285dbea6408" style="width: 100px; margin-right: 20px;">
+  <div>
+    <strong>Jeongseok Shim</strong> Team member<br>
+    [About] Wine beginner.
+  </div>
+</div>
+
+## 🍇 DATA Introduction 🍇
+
+- [**Wine-savvy / Food-savvy Data**](https://www.vivino.com/explore)  
+  - Called the API and extracted JSON  
+  - **Columns**: 22 columns × 3,675 rows  
+    - *wine_ratings_count*: number of ratings  
+    - *wine_ratings_average*: average rating  
+    - *foods*: food pairings  
+    - *vintage_price*: price  
+    - *vintage_wine_name*: wine name (name + vintage year)  
+    - *vintage_wine_type*: wine type (id mapped to type)  
+    - *varietal_name*: grape varietal  
+    - *variety*: wine variety  
+    - *winery*: winery  
+  - **Row Count**  
+    - After removing duplicates: `df.shape = (2024, 22)`
+
+- [**Beginner (“Warin-i”) Data**](https://www.kaggle.com/datasets/zynicide/wine-reviews?select=winemag-data_first150k.csv)  
+  - **Columns**  
+    - *description*: review text  
+    - *title*: wine name  
+    - *country*: country  
+    - *points*: rating  
+    - *price*: price  
+    - *variety*: variety  
+    - *winery*: winery  
+  - **Row Count**  
+    - After removing duplicates: 29,971 ⇨ 119,928  
+  - **Description words**  
+    - 68 words used  
+    - Words below 5% or above 90% frequency were excluded from vectorization
+
+## 🍇 Development Tools 🍇
+(Images unchanged)
+
+## 🍇 Our Recommendation System 🍇
+
+- **Wine-savvy ver.**  
+(see screenshot)
+
+- **Beginner (“Warin-i”) ver.**  
+“Warin-i” is a portmanteau of “wine + beginner.” Since beginners may not know terms like tannin or acidity, the system asks simple preference questions and recommends wines accordingly.
+
+**[Example] Step 1. Choose what you prefer.**  
+1) Meat &nbsp;&nbsp; 2) Fish &nbsp;&nbsp; 3) Vegetables
+
+For each choice, we assign characteristic tags and map them to a subset of our 68 keywords extracted from the model data.
+
+- **Meat**: rich red wines, beef/lamb/steak, juicy, full-bodied, tannic, bold flavors  
+  ⇒ [dry, firm, tannins, red, flavor, dark, cabernet, sauvignon]
+
+- **Fish**: white wines, crisp acidity, freshness, seafood  
+  ⇒ [fruit, white, crisp, fresh, bright, touch, sauvignon, light]
+
+- **Vegetables**: white / light red, roasted vegetables, salads, fresh, zesty, delicate  
+  ⇒ [fruit, white, crisp, fresh, bright, touch, sauvignon, light]
+
+(See screenshots)
+
+- **Food-savvy (“Mat-jal-al”) ver.**  
+(see screenshot)
+
+- **Recommendation Results**  
+  - **Best 3** (screenshot)  
+  - **Worst 3** (screenshot)
+
+## 🍇 Streamlit App 🍇
+👇 Click to use the wine recommendation system.
+
+[![image](https://github.com/user-attachments/assets/74016d81-546a-40ba-aaa6-6d9e63995d4b)
+](https://da36mini2dionysus-29g5hzkbgzgnskeescxfnc.streamlit.app/)
+
+## 🍇 Demo Video 🍇
+👇 Click to watch the implementation demo.
+
+[![Thumbnail](https://github.com/user-attachments/assets/3c4ac3b1-5403-4942-ae89-35263034488f)](https://youtu.be/Fy1aycHWAVM)
 
 
 
